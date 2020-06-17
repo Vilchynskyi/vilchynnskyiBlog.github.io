@@ -11,10 +11,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.flex-item {
+.flex_item {
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 
@@ -26,6 +25,7 @@ body {
     margin-right: -15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .header {
     padding: 26px 0;
@@ -40,7 +40,8 @@ body {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 .menu::-webkit-scrollbar {
     display: none;
@@ -67,7 +68,6 @@ body {
     margin-left: auto;
     border: 2px solid #3c4147;
     border-radius: 3px;
-    width: 195px;
     display: flex;
     flex-direction: row;
 }
@@ -75,7 +75,6 @@ body {
     padding: 0;
     border: none;
     background-color: transparent;
-    width: 150px;
 }
 .search input::placeholder {
     text-transform: uppercase;
@@ -98,18 +97,71 @@ input[type="text"] {
 }
 
 
-/* Slideshow */
+/* ligth_style */
 
 
-.flex-slideshow {
-    display: flex;
+.ligth_style {
+    background-color: white;
 }
-.slideshow {
+.title_of_light_section {
+    color: black;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+.title_of_light_section::before {
+    content: "";
+    display: inline-block;
+    height: 35px;
+    width: 10px;
+    background-color: #e1e6ea;
+    position: relative;
+    top: 8px;
+}
+
+
+/* dark_style */
+
+
+.dark_style {
+    background-color: #3a454d;
+    padding: 30px 0 50px; 
+}
+.title_of_dark_section {
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+.title_of_dark_section::before {
+    content: "";
+    display: inline-block;
+    height: 35px;
+    width: 10px;
+    background-color: #4e5a62;
+    position: relative;
+    top: 8px;
+}
+
+.about, .team {
+    padding: 30px 0;
+}
+
+
+/* home section */
+
+
+.flex_home {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.home {
     background-image: url(blog_sample/img_slide.png);
     background-repeat: no-repeat;
     height: 360px;
 }
-.welcome_text {
+.home_block {
     padding: 25px 0 25px;
 }
 .greeting_text {
@@ -139,108 +191,85 @@ input[type="text"] {
 }
 
 
-/* Tablet */
+/* about section */
 
-@media(min-width:768px) {
-    .container {
-        max-width: 720px;
-    }
-    .flex-header {
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .company_logo {
-        margin-top: 7px;
-    }
-    .menu {
-        width: 42vw;
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-    .menu::-webkit-scrollbar {
-        display: none;
-    }
-    .welcome_text {
-        padding: 85px 0 80px;
-    }
-    .employees {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.flex_about {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-direction: column;
 }
-
-
-/* Laptop */
-@media(min-width:992px) {
-    a {
-        cursor: pointer;
-    }
-    .container {
-        max-width: 960px;
-    }
-    .flex-header {
-        flex-direction: row;
-    }
-    .menu {
-        width: inherit;
-    }
-    .slideshow {
-        height: 660px;
-    }
-    .welcome_text {
-        padding: 225px 0;
-    }
-    .description_text {
-        width: 60%;
-    }
-}
-
-
-/* Desktop */
-@media(min-width:1200px) {
-    .container {
-        max-width: 1140px;
-    }
-    .flex-header {
-        flex-direction: row;
-    }
-}
-
-
-/* Mobile */
-@media(max-width:767px) {
-
-}
-
-
-/* ligth_style */
-
-
-.ligth_style {
-    background-color: white;
-    margin-bottom: 50px;
-}
-.title_of_light_section {
-    color: black;
-    text-transform: uppercase;
-    font-size: 25px;
-    margin-bottom: 60px;
-}
-.title_of_light_section::before {
+.about::after {
+    margin-top: 100px;
     content: "";
-    display: inline-block;
+    display: block;
+    background-color: #dde1e4;
+    height: 1px;
+    width: 100vw;
+}
+.about_text {
+    margin-bottom: 30px;
+}
+.about_text > p {
+    font-size: 16px;
+    color: #8d8f92;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.about_advantage {
+    display: flex;
+    margin-bottom: 30px;
+}
+.advantage_num {
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
     height: 35px;
-    width: 10px;
-    background-color: #e1e6ea;
-    position: relative;
-    top: 8px;
+    width: 35px;
+    text-align: center;
+    background-color: #23b7a4;
+}
+.advantage_title {
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.advantage_text {
+    color: #8d8f92;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.social_networks_block {
+    width: 244px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social_network {
+    max-height: 48px;
+    background-color: #c8cdd0;
+}
+.social_network:hover {
+    background-color: #d0d5d9;
+}
+
+
+/* team section */
+
+.flex_team {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .employees {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.employee {
+    margin-bottom: 5px;
 }
 .employee_info {
     padding: 20px;
@@ -260,7 +289,7 @@ input[type="text"] {
     align-items: center;
     justify-content: center;
 }
-.employee:hover .foto_overlay {
+.employee:hover .employee_foto_overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -272,6 +301,7 @@ input[type="text"] {
     display: none;
     position: absolute;
     width: 148px;
+    max-height: 48px;
 }
 .employee:hover .employee_social_media {
     z-index: 11;
@@ -292,4 +322,150 @@ input[type="text"] {
 .employee_position {
     color: #8d8f92;
 }
+
+
+/* work */
+
+
+.works_foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.foto_of_work {
+    margin-bottom: 15px;
+}
+.foto_of_work img{
+    width: 100%;
+}
+.foto_of_work:hover {
+
+}
+.show_more_photo_btn {
+    margin: 30px auto 0;
+}
+.show_more_photo_btn button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    line-height: 10px;
+}
+.show_more_photo_btn:hover {
+    background-color: #8d8f92a8;
+}
+
+/* Tablet */
+
+
+@media(min-width:768px) {
+
+    .flex-header {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .company_logo {
+        margin-top: 7px;
+    }
+    .menu {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .menu::-webkit-scrollbar {
+        display: none;
+    }
+    .home_block {
+        padding: 85px 0 80px;
+    }
+    .employees {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* Laptop */
+@media(min-width:992px) {
+    a {
+        cursor: pointer;
+    }
+    .flex-header {
+        flex-direction: row;
+    }
+    .menu {
+        justify-content: space-between;
+        display: flex;
+        overflow-x: unset;
+        overflow-y: unset;
+    }
+    .home {
+        height: 660px;
+    }
+    .home_block {
+        padding: 225px 0;
+    }
+    .description_text {
+        width: 60%;
+    }
+    .flex_about {
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+    .advantage_num {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 15px;
+    }
+    .employee:hover {
+        cursor: pointer;
+    }
+    .foto_of_work {
+        margin-bottom: 20px;
+    }
+    .show_more_photo_btn button:hover {
+        cursor: pointer;
+    }
+}
+
+
+/* Desktop */
+@media(min-width:1200px) {
+    .flex-header {
+        flex-direction: row;
+    }
+    .search {
+        max-width: 180px;
+    }
+    .search input {
+        width: calc(100% - 30px)
+    }
+    .foto_of_work {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Mobile */
+@media(max-width:767px) {
+    .about_buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    .flex_about {
+        align-items: center;
+    }
+
+}
+
+
+
 

@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="flex-header">
-                <div class="flex-item">
-                    <div class="company_logo">
-                        <a href="">
-                            <img src="blog_sample/modest.png" alt="" srcset="">
-                        </a>
-                    </div>
+                <div class="flex_item company_logo col_sm_3">
+                    <a href="">
+                        <img src="blog_sample/modest.png" alt="" srcset="">
+                    </a>
                 </div>
-                <div class="flex-item">
+                <div class="flex_item col_xs_12 col_sm_6 col_md_7">
                     <nav>
                         <div class="menu">
                             <div class="menu_item"><a href="">Home</a></div>
                             <div class="menu_item"><a href="">About</a></div>
-                            <div class="menu_item"><a href="">Work</a></div>
                             <div class="menu_item"><a href="">Team</a></div>
+                            <div class="menu_item"><a href="">Work</a></div>
                             <div class="menu_item"><a href="">Services</a></div>
                             <div class="menu_item"><a href="">Features</a></div>
                             <div class="menu_item"><a href="">Contact</a></div>
                         </div>
                     </nav>
                 </div>
-                <div class="flex-item">
+                <div class="flex_item col_sm_4 col_md_3">
                     <div class="search">
                         <input type="text" name="search" placeholder="search">
                         <div class="search_icon"></div>
@@ -42,122 +43,221 @@
         </div>
     </header>
     <main class="main">
-        <section class="slideshow">
-                <div class="container">
-                    <div class="flex-slideshow">
-                        <div class="flex-item">
-                            <div class="welcome_text">
-                                <div class="greeting_text">
-                                    Welcome to our marketplace
-                                </div>
-                                <div class="description_text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam veniam quod, perspiciatis, ipsum sed esse blanditiis odio dolorem quia sit.
-                                </div>
-                                <div class="about_buttons">
-                                    <button>View More</button>
-                                    <button>Video tour</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!-- <section class="ligth_style">
+        <section class="home">
             <div class="container">
-                <div class="title_of_light_section">
-                    We are modest.
-                </div>
-                <div class="title_of_light_section">
-                    Meet the team.
-                </div>
-                <div class="employees">
-                    <div class="employee">
-                        <div class="employee_foto">
-                            <img src="blog_sample/bob.png" alt="" srcset="">
-                            <div class="foto_overlay"></div>
-                            <div class="employee_social_media">
-                                <div class="employee_twitter">
-                                    <img src="blog_sample/twitter_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/facebook_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/icon (7).png" alt="" srcset="">
-                                </div>
+                <div class="flex_home">
+                    <div class="flex_item">
+                        <div class="home_block">
+                            <div class="greeting_text">
+                                Welcome to our marketplace
                             </div>
-                        </div>
-                        <div class="employee_info">
-                            <div class="employee_name">Bob Singer</div>
-                            <div class="employee_position">CEO</div>
-                        </div>
-                    </div>
-                    <div class="employee">
-                        <div class="employee_foto">
-                            <img src="blog_sample/carl.png" alt="" srcset="">
-                            <div class="foto_overlay"></div>
-                            <div class="employee_social_media">
-                                <div class="employee_twitter">
-                                    <img src="blog_sample/twitter_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/facebook_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/icon (7).png" alt="" srcset="">
-                                </div>
+                            <div class="description_text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam veniam quod, perspiciatis, ipsum sed esse blanditiis odio dolorem quia sit.
                             </div>
-                        </div>
-                        <div class="employee_info">
-                            <div class="employee_name">Carl Shelby</div>
-                            <div class="employee_position">Engineer</div>
-                        </div>
-                    </div>
-                    <div class="employee">
-                        <div class="employee_foto">
-                            <img src="blog_sample/mary.png" alt="" srcset="">
-                            <div class="foto_overlay"></div>
-                            <div class="employee_social_media">
-                                <div class="employee_twitter">
-                                    <img src="blog_sample/twitter_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/facebook_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/icon (7).png" alt="" srcset="">
-                                </div>
+                            <div class="about_buttons">
+                                <button>View More</button>
+                                <button>Video tour</button>
                             </div>
-                        </div>
-                        <div class="employee_info">
-                            <div class="employee_name">Mary poppins</div>
-                            <div class="employee_position">Designer</div>
-                        </div>
-                    </div>
-                    <div class="employee">
-                        <div class="employee_foto">
-                            <img src="blog_sample/rob.png" alt="" srcset="">
-                            <div class="foto_overlay"></div>
-                            <div class="employee_social_media">
-                                <div class="employee_twitter">
-                                    <img src="blog_sample/twitter_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/facebook_small.png" alt="" srcset="">
-                                </div>
-                                <div class="employee_facebook">
-                                    <img src="blog_sample/icon (7).png" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="employee_info">
-                            <div class="employee_name">rob schneider</div>
-                            <div class="employee_position">HR</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+        <section class="about ligth_style">
+            <div class="container">
+                <div class="flex_about">
+                    <div class="flex_item title_of_light_section col_xs_12">
+                        We are modest.
+                    </div>
+                    <div class="flex_item about_text col_xs_12 col_md_7">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corrupti saepe sint ex labore velit nobis voluptatibus. Tenetur earum necessitatibus enim libero officiis velit quae quidem corporis. At, autem dolorem?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corrupti saepe sint ex labore velit nobis voluptatibus. Tenetur earum necessitatibus enim libero officiis velit quae quidem corporis. At, autem dolorem?
+                        </p>
+                    </div>
+                    <div class="flex_item about_advantages_block col_xs_12 col_md_5">
+                        <div class="about_advantage">
+                            <div class="advantage_num">01</div>
+                            <div class=" col_xs_10">
+                                <div class="advantage_title">Dedication to customers</div>
+                                <div class="advantage_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum dolore laboriosam, dicta porro ut?</div>
+                            </div>
+                        </div>
+                        <div class="about_advantage">
+                            <div class="advantage_num">02</div>
+                            <div class=" col_xs_10">
+                                <div class="advantage_title">Working closely to our clients</div>
+                                <div class="advantage_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum dolore laboriosam, dicta porro ut?</div>
+                            </div>
+                        </div>
+                        <div class="about_advantage">
+                            <div class="advantage_num">03</div>
+                            <div class=" col_xs_10">
+                                <div class="advantage_title">Increase happines</div>
+                                <div class="advantage_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum dolore laboriosam, dicta porro ut?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex_item social_networks_block">
+                        <div class="social_network">
+                            <a href=""><img src="blog_sample/facebook.png" alt="" srcset=""></a>
+                        </div>
+                        <div class="social_network">
+                            <a href=""><img src="blog_sample/google.png" alt="" srcset=""></a>
+                        </div>
+                        <div class="social_network">
+                            <a href="">
+                                <img src="blog_sample/twitter.png" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="social_network">
+                            <a href="">
+                                <img src="blog_sample/be.png" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="social_network">
+                            <a href="">
+                                <img src="blog_sample/basketball.png" alt="" srcset="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team ligth_style">
+            <div class="container">
+                <div class="flex_team">
+                    <div class="flex_item title_of_light_section">
+                            Meet the team.
+                    </div>
+                    <div class="flex_item">
+                        <div class="employees">
+                                <div class="employee">
+                                    <div class="employee_foto">
+                                        <img src="blog_sample/bob.png" alt="" srcset="">
+                                        <div class="employee_foto_overlay"></div>
+                                        <div class="employee_social_media">
+                                            <div class="employee_twitter">
+                                                <img src="blog_sample/twitter_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/facebook_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/icon (7).png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employee_info">
+                                        <div class="employee_name">Bob Singer</div>
+                                        <div class="employee_position">CEO</div>
+                                    </div>
+                                </div>
+                                <div class="employee">
+                                    <div class="employee_foto">
+                                        <img src="blog_sample/carl.png" alt="" srcset="">
+                                        <div class="employee_foto_overlay"></div>
+                                        <div class="employee_social_media">
+                                            <div class="employee_twitter">
+                                                <img src="blog_sample/twitter_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/facebook_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/icon (7).png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employee_info">
+                                        <div class="employee_name">Carl Shelby</div>
+                                        <div class="employee_position">Engineer</div>
+                                    </div>
+                                </div>
+                                <div class="employee">
+                                    <div class="employee_foto">
+                                        <img src="blog_sample/mary.png" alt="" srcset="">
+                                        <div class="employee_foto_overlay"></div>
+                                        <div class="employee_social_media">
+                                            <div class="employee_twitter">
+                                                <img src="blog_sample/twitter_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/facebook_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/icon (7).png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employee_info">
+                                        <div class="employee_name">Mary poppins</div>
+                                        <div class="employee_position">Designer</div>
+                                    </div>
+                                </div>
+                                <div class="employee">
+                                    <div class="employee_foto">
+                                        <img src="blog_sample/rob.png" alt="" srcset="">
+                                        <div class="employee_foto_overlay"></div>
+                                        <div class="employee_social_media">
+                                            <div class="employee_twitter">
+                                                <img src="blog_sample/twitter_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/facebook_small.png" alt="" srcset="">
+                                            </div>
+                                            <div class="employee_facebook">
+                                                <img src="blog_sample/icon (7).png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employee_info">
+                                        <div class="employee_name">rob schneider</div>
+                                        <div class="employee_position">HR</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work dark_style">
+            <div class="container">
+                <div class="title_of_dark_section col_xs_12">
+                    Lovely work.
+                </div>
+                <div class="flex_work">
+                    <div class="works_foto">
+                        <div class="foto_of_work col_sm_4">
+                            <img src="blog_sample/img (10).png" alt="" srcset="">
+                            <div class="work_photo_overlay">
+                                
+                            </div>
+                        </div>
+                        <div class="foto_of_work col_sm_4">
+                            <img src="blog_sample/img (11).png" alt="" srcset="">
+                        </div>
+                        <div class="foto_of_work col_sm_4">
+                            <img src="blog_sample/img (12).png" alt="" srcset="">
+                        </div>
+                        <div class="foto_of_work col_sm_4">
+                            <img src="blog_sample/img (13).png" alt="" srcset="">
+                        </div>
+                        <div class="foto_of_work col_sm_4">
+                            <img src="blog_sample/img (14).png" alt="" srcset="">
+                        </div>
+                        <div class="foto_of_work col_sm_4">
+                            <img src="blog_sample/img (15).png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="show_more_photo_btn col_xs_6 col_sm_3 col_md_2">
+                        <button>Show me more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer"></footer>
 </body>
