@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MODEST.</title>
     <link rel="stylesheet" href="reset.css">
-    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
@@ -23,13 +22,13 @@
                 <div class="flex_item col_xs_12 col_sm_6 col_md_7">
                     <nav>
                         <div class="menu">
-                            <div class="menu_item"><a href="">Home</a></div>
-                            <div class="menu_item"><a href="">About</a></div>
-                            <div class="menu_item"><a href="">Team</a></div>
-                            <div class="menu_item"><a href="">Work</a></div>
-                            <div class="menu_item"><a href="">Services</a></div>
-                            <div class="menu_item"><a href="">Features</a></div>
-                            <div class="menu_item"><a href="">Contact</a></div>
+                            <div class="menu_item"><a href="#home">Home</a></div>
+                            <div class="menu_item"><a href="#about">About</a></div>
+                            <div class="menu_item"><a href="#team">Team</a></div>
+                            <div class="menu_item"><a href="#work">Work</a></div>
+                            <div class="menu_item"><a href="#services">Services</a></div>
+                            <div class="menu_item"><a href="#features">Features</a></div>
+                            <div class="menu_item"><a href="#contact">Contact</a></div>
                         </div>
                     </nav>
                 </div>
@@ -43,7 +42,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="home">
+        <section id="home" class="home">
             <div class="container">
                 <div class="flex_home">
                     <div class="flex_item">
@@ -63,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <section class="about ligth_style">
+        <section id="about" class="about ligth_style">
             <div class="container">
                 <div class="flex_about">
                     <div class="flex_item title_of_light_section col_xs_12">
@@ -126,14 +125,14 @@
                 </div>
             </div>
         </section>
-        <section class="team ligth_style">
+        <section id="team" class="team ligth_style">
             <div class="container">
                 <div class="flex_team">
                     <div class="flex_item title_of_light_section">
                             Meet the team.
                     </div>
                     <div class="flex_item">
-                        <div class="employees">
+                        <div class="employees col_sm_10 col_lg_12">
                                 <div class="employee">
                                     <div class="employee_foto">
                                         <img src="blog_sample/bob.png" alt="" srcset="">
@@ -223,7 +222,7 @@
                 </div>
             </div>
         </section>
-        <section class="work dark_style">
+        <section id="work" class="work dark_style">
             <div class="container">
                 <div class="title_of_dark_section col_xs_12">
                     Lovely work.
@@ -232,24 +231,33 @@
                     <div class="works_foto">
                         <div class="foto_of_work col_sm_4">
                             <img src="blog_sample/img (10).png" alt="" srcset="">
-                            <div class="work_photo_overlay">
-                                
-                            </div>
+                            <div class="work_photo_overlay"></div>
+                            <div class="work_photo_desc">lorem ipsum</div>
                         </div>
                         <div class="foto_of_work col_sm_4">
                             <img src="blog_sample/img (11).png" alt="" srcset="">
+                            <div class="work_photo_overlay"></div>
+                            <div class="work_photo_desc">lorem ipsum</div>
                         </div>
                         <div class="foto_of_work col_sm_4">
                             <img src="blog_sample/img (12).png" alt="" srcset="">
+                            <div class="work_photo_overlay"></div>
+                            <div class="work_photo_desc">lorem ipsum</div>
                         </div>
                         <div class="foto_of_work col_sm_4">
                             <img src="blog_sample/img (13).png" alt="" srcset="">
+                            <div class="work_photo_overlay"></div>
+                            <div class="work_photo_desc">lorem ipsum</div>
                         </div>
                         <div class="foto_of_work col_sm_4">
                             <img src="blog_sample/img (14).png" alt="" srcset="">
+                            <div class="work_photo_overlay"></div>
+                            <div class="work_photo_desc">lorem ipsum</div>
                         </div>
                         <div class="foto_of_work col_sm_4">
                             <img src="blog_sample/img (15).png" alt="" srcset="">
+                            <div class="work_photo_overlay"></div>
+                            <div class="work_photo_desc">lorem ipsum</div>
                         </div>
                     </div>
                     <div class="show_more_photo_btn col_xs_6 col_sm_3 col_md_2">
@@ -258,7 +266,123 @@
                 </div>
             </div>
         </section>
+        <section id="services" class="services light_style">
+            <div class="container">
+                <div class="flex_services">
+                    <div class="flex_item title_of_light_section col_xs_12">
+                        What we do.
+                    </div>
+                    <div class="services_block">
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/settings.png" alt="" srcset="">
+                            <div class="service_title">Easy theme setup</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/pencil.png" alt="" srcset="">
+                            <div class="service_title">Pixel perfect design</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/phone.png" alt="" srcset="">
+                            <div class="service_title">Responsive display</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/clock.png" alt="" srcset="">
+                            <div class="service_title">24/7 support</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/settings.png" alt="" srcset="">
+                            <div class="service_title">Easy theme setup</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/pencil.png" alt="" srcset="">
+                            <div class="service_title">Pixel perfect design</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/phone.png" alt="" srcset="">
+                            <div class="service_title">Responsive display</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                        <div class="service_item flex_item col_md_3 col_sm_6 col_xs_12">
+                            <img src="blog_sample/clock.png" alt="" srcset="">
+                            <div class="service_title">24/7 support</div>
+                            <div class="service_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illo vitae tenetur eligendi.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="features dark_style">
+            <div class="container">
+                <div class="title_of_dark_section col_xs_12">
+                    Features.
+                </div>
+                <div class="flex_features">
+                    <div class="feature flex_item col_xs_12 col_sm_4">
+                        <img src="blog_sample/img (7).png" alt="" srcset="">
+                        <div class="feature_title">Product design: eames chairs</div>
+                        <div class="feature_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt asperiores cupiditate molestias et sed consequatur tenetur, dolore, id minima sequi soluta quaerat. Neque, placeat.</div>
+                    </div>
+                    <div class="feature flex_item col_xs_12 col_sm_4">
+                        <img src="blog_sample/img (8).png" alt="" srcset="">
+                        <div class="feature_title">Elegant and colorful logos</div>
+                        <div class="feature_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt asperiores cupiditate molestias et sed consequatur tenetur, dolore, id minima sequi soluta quaerat. Neque, placeat.</div>
+                    </div>
+                    <div class="feature flex_item col_xs_12 col_sm_4">
+                        <img src="blog_sample/img (9).png" alt="" srcset="">
+                        <div class="feature_title">A showcase of creative</div>
+                        <div class="feature_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt asperiores cupiditate molestias et sed consequatur tenetur, dolore, id minima sequi soluta quaerat. Neque, placeat.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact ligth_style">
+            <div class="container">
+                <div class="flex_contact">
+                    <div class="flex_item title_of_light_section col_xs_12">
+                        Stay in touch.
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="map_img">
+                <img src="blog_sample/map.png" alt="" srcset="">
+            </div>
+            <div class="container">
+                <div class="flex_contact">
+                    <div class="flex_item contact_info col_xs_12 col_sm_8 col_md_6">
+                        <div class="contact_title">Contact information</div>
+                        <div class="contact_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quo temporibus dolorum voluptatem impedit ab aliquam facere, ex neque corrupti ullam eaque necessitatibus dolor cum! Beatae ex similique, sit nemo exercitationem, ea voluptatum sunt, dolor fugiat nam quasi neque odio!
+                        </div>
+                    </div>
+                    <div class="flex_item contact_btn col_md_3 col_lg_2">
+                        <button>SEND MESSAGE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="flex_footer">
+                <div class="flex_item copyright col_xs_12 col_sm_5 col_md_4">
+                    &copy;Copyright 2014 by PSD Booster.
+                </div>
+                <div class="flex_item footer_social_network col_xs_12 col_sm_4 col_md_3">
+                    <a href=""><img src="blog_sample/facebook_small.png" alt=""></a>
+                    <a href=""><img src="blog_sample/skype.png" alt=""></a>
+                    <a href=""><img src="blog_sample/twitter_small.png" alt=""></a>
+                    <a href=""><img src="blog_sample/be_small.png" alt=""></a>
+                    <a href=""><img src="blog_sample/icon (7).png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -6,6 +6,9 @@ lg - desktop */
 .col_xs_6 {
     width: 48.68%;
 }
+.col_xs_9 {
+    width: 74.45%;
+}
 .col_xs_10 {
     width: 82.89%;
 }
@@ -19,6 +22,7 @@ lg - desktop */
     .container {
         max-width: 720px;
     }
+
     .col_sm_3 {
         width: 23.07%;
     }
@@ -69,6 +73,9 @@ lg - desktop */
     .col_md_7 {
         width: 57.28%;
     }
+    .col_md_10 {
+        width: 82.89%;
+    }
     .col_md_12 {
         width: 100%;
     }
@@ -82,5 +89,8 @@ lg - desktop */
     }
     .col_lg_2 {
         width: 14.47%;
+    }
+    .col_lg_12 {
+        width: 100%;
     }
 }
