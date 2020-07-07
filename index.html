@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MODEST.</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
@@ -45,20 +47,50 @@
         <section id="home" class="home">
             <div class="container">
                 <div class="flex_home">
-                    <div class="flex_item">
-                        <div class="home_block">
-                            <div class="greeting_text">
-                                Welcome to our marketplace
-                            </div>
-                            <div class="description_text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam veniam quod, perspiciatis, ipsum sed esse blanditiis odio dolorem quia sit.
-                            </div>
-                            <div class="about_buttons">
-                                <button>View More</button>
-                                <button>Video tour</button>
+                    <div class="owl-carousel owl-theme">
+                        <div class="flex_item">
+                            <div class="home_block">
+                                <div class="greeting_text">
+                                    Welcome to our marketplace
+                                </div>
+                                <div class="description_text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam veniam quod, perspiciatis, ipsum sed esse blanditiis odio dolorem quia sit.
+                                </div>
+                                <div class="about_buttons">
+                                    <button>View More</button>
+                                    <button>Video tour</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="flex_item">
+                            <div class="home_block">
+                                <div class="greeting_text">
+                                    Welcome to our marketplace
+                                </div>
+                                <div class="description_text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam veniam quod, perspiciatis, ipsum sed esse blanditiis odio dolorem quia sit.
+                                </div>
+                                <div class="about_buttons">
+                                    <button>View More</button>
+                                    <button>Video tour</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_item">
+                            <div class="home_block">
+                                <div class="greeting_text">
+                                    Welcome to our marketplace
+                                </div>
+                                <div class="description_text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam veniam quod, perspiciatis, ipsum sed esse blanditiis odio dolorem quia sit.
+                                </div>
+                                <div class="about_buttons">
+                                    <button>View More</button>
+                                    <button>Video tour</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
@@ -347,19 +379,33 @@
                     <div class="flex_item title_of_light_section col_xs_12">
                         Stay in touch.
                     </div>
-                    
                 </div>
             </div>
-            <div class="map_img">
-                <img src="blog_sample/map.png" alt="" srcset="">
-            </div>
+            <div class="map_img"><img src="blog_sample/map.png" alt="" srcset=""></div>
             <div class="container">
                 <div class="flex_contact">
-                    <div class="flex_item contact_info col_xs_12 col_sm_8 col_md_6">
+                    <div class="flex_item contact_info col_xs_12 col_sm_6 col_md_6">
                         <div class="contact_title">Contact information</div>
                         <div class="contact_desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quo temporibus dolorum voluptatem impedit ab aliquam facere, ex neque corrupti ullam eaque necessitatibus dolor cum! Beatae ex similique, sit nemo exercitationem, ea voluptatum sunt, dolor fugiat nam quasi neque odio!
                         </div>
+                    </div>
+                    <div class="flex_item contact_form col_xs_12 col_sm_6">
+                        <form action="">
+                            <div class="form_input_block">
+                                <h3>YOUR NAME</h3>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="form_input_block">
+                                <h3>YOUR EMAIL</h3>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="form_textarea_block">
+                                <h3>YOUR MESSAGE</h3>
+                                <textarea name="message" id="" rows="8"></textarea>
+                            </div>
+                            <div class="form_btn"><button>SEND MESSAGE</button></div>
+                        </form>
                     </div>
                     <div class="flex_item contact_btn col_md_3 col_lg_2">
                         <button>SEND MESSAGE</button>
@@ -384,5 +430,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
