@@ -21,9 +21,10 @@
                         <img src="blog_sample/modest.png" alt="" srcset="">
                     </a>
                 </div>
-                <div class="flex_item col_xs_12 col_sm_6 col_md_7">
-                    <nav>
-                        <div class="menu">
+                <div class="flex_item col_sm_6 col_md_7">
+                    <nav class="navigation hidden_menu">
+                        <div class="menu" id="nav">
+                            <input class="mobile_search" type="text" name="search" placeholder="search">
                             <div class="menu_item"><a href="#home">Home</a></div>
                             <div class="menu_item"><a href="#about">About</a></div>
                             <div class="menu_item"><a href="#team">Team</a></div>
@@ -33,18 +34,22 @@
                             <div class="menu_item"><a href="#contact">Contact</a></div>
                         </div>
                     </nav>
-                </div>
-                <div class="flex_item col_sm_4 col_md_3">
-                    <div class="search">
-                        <input type="text" name="search" placeholder="search">
-                        <div class="search_icon"></div>
+                    <div class="mobile_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+                </div>
+                <div class="flex_item col_sm_4 col_md_3 search hidden_search">
+                    <input type="text" name="search" placeholder="search">
+                    <div class="search_icon"></div>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section id="home" class="home">
+        <section  class="home">
+            <div class="anchor" id="home"></div>
             <div class="container">
                 <div class="flex_home">
                     <div class="owl-carousel owl-theme">
@@ -94,7 +99,8 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="about ligth_style">
+        <section  class="about light_style">
+            <div class="anchor" id="about"></div>
             <div class="container">
                 <div class="flex_about">
                     <div class="flex_item title_of_light_section col_xs_12">
@@ -157,7 +163,8 @@
                 </div>
             </div>
         </section>
-        <section id="team" class="team ligth_style">
+        <section  class="team light_style">
+            <div class="anchor" id="team"></div>
             <div class="container">
                 <div class="flex_team">
                     <div class="flex_item title_of_light_section">
@@ -254,7 +261,8 @@
                 </div>
             </div>
         </section>
-        <section id="work" class="work dark_style">
+        <section  class="work dark_style">
+            <div class="anchor" id="work"></div>
             <div class="container">
                 <div class="title_of_dark_section col_xs_12">
                     Lovely work.
@@ -298,7 +306,8 @@
                 </div>
             </div>
         </section>
-        <section id="services" class="services light_style">
+        <section  class="services light_style">
+            <div class="anchor" id="services"></div>
             <div class="container">
                 <div class="flex_services">
                     <div class="flex_item title_of_light_section col_xs_12">
@@ -349,7 +358,8 @@
                 </div>
             </div>
         </section>
-        <section id="features" class="features dark_style">
+        <section class="features dark_style">
+            <div class="anchor" id="features"></div>
             <div class="container">
                 <div class="title_of_dark_section col_xs_12">
                     Features.
@@ -373,7 +383,8 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact ligth_style">
+        <section class="contact light_style">
+            <div class="anchor" id="contact"></div>
             <div class="container">
                 <div class="flex_contact">
                     <div class="flex_item title_of_light_section col_xs_12">
@@ -431,8 +442,10 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="jquery.nav.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
